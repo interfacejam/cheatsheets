@@ -26,79 +26,77 @@
     </header>
     <main>
         <div class="wrapper">
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Selector</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><code>[]</code></th>
-                            <td class="description">Matches a specific attribute (whatever its value)</td>
-                            <td>
-                                <div class="example">
-                                    <code>p[class]</code>Targets any &lt;p&gt; element with an attribute called class
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><code>[=]</code></th>
-                            <td>Matches a specific attribute with a specific value</td>
-                            <td>
-                                <div class="example">
-                                    <code>p[class="dog"]</code>Targets any &lt;p&gt; element with an
-                                    attribute called class
-                                    whose value is dog
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><code>[~=]</code></th>
-                            <td>Matches a specific attribute whose value appears in a space-separated list of words</td>
-                            <td>
-                                <div class="example">
-                                    <code>p[class~="dog"]</code>Targets any &lt;p&gt; element with an attribute called
-                                    class whose value is a list of space-separated words, one of which is dog
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><code>[^=]</code></th>
-                            <td>Matches a specific attribute whose value begins with a specific string</td>
-                            <td>
-                                <div class="example">
-                                    <code>p[attr^"d"]</code>Targets any &lt;p&gt; element with an attribute
-                                    whose value begins with the letter "d"
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><code>[*=]</code></th>
-                            <td>Matches a specific attribute whose value contains a specific substring</td>
-                            <td>
-                                <div class="example">
-                                    <code>p[attr*"do"]</code>Targets any &lt;p&gt; element with an attribute
-                                    whose value contains the letters "do"
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><code>[$=]</code></th>
-                            <td>Matches a specific attribute whose value ends with a specific string</td>
-                            <td>
-                                <div class="example">
-                                    <code>p[attr$"g"]</code>Targets any &lt;p&gt; element with an attribute
-                                    whose value ends with the letter "g"
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Selector</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><code>[]</code></th>
+                        <td class="description">Matches a specific attribute (whatever its value)</td>
+                        <td>
+                            <div class="example">
+                                <code>p[class]</code>Targets any &lt;p&gt; element with an attribute called class
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>[=]</code></th>
+                        <td>Matches a specific attribute with a specific value</td>
+                        <td>
+                            <div class="example">
+                                <code>p[class="dog"]</code>Targets any &lt;p&gt; element with an
+                                attribute called class
+                                whose value is dog
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>[~=]</code></th>
+                        <td>Matches a specific attribute whose value appears in a space-separated list of words</td>
+                        <td>
+                            <div class="example">
+                                <code>p[class~="dog"]</code>Targets any &lt;p&gt; element with an attribute called
+                                class whose value is a list of space-separated words, one of which is dog
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>[^=]</code></th>
+                        <td>Matches a specific attribute whose value begins with a specific string</td>
+                        <td>
+                            <div class="example">
+                                <code>p[attr^"d"]</code>Targets any &lt;p&gt; element with an attribute
+                                whose value begins with the letter "d"
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>[*=]</code></th>
+                        <td>Matches a specific attribute whose value contains a specific substring</td>
+                        <td>
+                            <div class="example">
+                                <code>p[attr*"do"]</code>Targets any &lt;p&gt; element with an attribute
+                                whose value contains the letters "do"
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>[$=]</code></th>
+                        <td>Matches a specific attribute whose value ends with a specific string</td>
+                        <td>
+                            <div class="example">
+                                <code>p[attr$"g"]</code>Targets any &lt;p&gt; element with an attribute
+                                whose value ends with the letter "g"
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <!-- end wrapper -->
     </main>
