@@ -1,5 +1,5 @@
-
 body {
+    font-family: 'Open Sans', sans-serif;
     background-color: whitesmoke;
 }
 
@@ -12,17 +12,14 @@ body {
 
 
 h1 {
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
     margin: 24px 0;
     color: black;
 }
 
 header p {
-    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 96px;
@@ -30,15 +27,18 @@ header p {
     line-height: 1.6;
 }
 
+.breadcrumbs {
+    color: darkgray;
+}
+
 table {
     width: 100%;
-    font-family: 'Open Sans';
     table-layout: fixed;
 }
 
 thead th {
     border-bottom: 2px solid black;
-    padding: 4px 8px 4px 0;
+    padding: 4px 8px 8px 0;
     color: black;
     font-size: 14px;
     font-weight: 700;
@@ -46,30 +46,18 @@ thead th {
     text-align: left;
 }
 
-tbody th {
-    text-transform: uppercase;
-}
-
 tbody th,
 tbody td {
     vertical-align: top;
-    border-bottom: 1px dotted black;
-    padding: 16px 8px 0 0;
-    font-size: 13px;
+    border-bottom: 1px solid silver;
+    padding: 16px 16px 0 0;
+    font-size: 14px;
     text-align: left;
-}
-
-tr b {
-    font-family: 'Source Code Pro';
-    font-weight: 400;
-    color: deeppink;
-}
-
-td p {
-    font-size: 12px;
-    padding: 12px 0;
-    color: dimgray;
     line-height: 1.6;
+}
+
+tr>td:last-child {
+    padding-right: 0;
 }
 
 tbody>tr:last-child th,
@@ -77,12 +65,53 @@ tbody>tr:last-child td {
     border-bottom: none;
 }
 
-footer .wrapper {
-    background-color: gainsboro;
+tbody code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    color: deeppink;
+    margin-bottom: 12px;
+    display: block;
 }
 
-footer p {
-    font-family: 'Open Sans';
-    font-size: 12px;
+td .description {
+    font-size: 14px;
+    color: black;
+}
+
+.example {
+    background: whitesmoke;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 12px;
+    font-size: 13px;
     color: dimgray;
+}
+
+.example code {
+    font-size: 16px;
+    color: royalblue;
+}
+
+footer .wrapper {
+    padding: 20px 32px;
+    background-color: dimgray;
+    height: 16px;
+    font-size: 14px;
+    color: whitesmoke;
+
+}
+
+footer .left {
+    float: left;
+    font-weight: 700;
+}
+
+footer .right {
+    float: right;
+}
+
+footer a {
+    text-decoration: underline;
+    color: whitesmoke;
 }
