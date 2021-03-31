@@ -10,6 +10,9 @@ body {
     padding: 32px;
 }
 
+main .wrapper{
+    overflow-x: auto;
+}
 
 h1 {
     font-family: 'Raleway', sans-serif;
@@ -33,6 +36,7 @@ header p {
 
 table {
     width: 100%;
+    min-width: 490px;
     table-layout: fixed;
 }
 
@@ -94,12 +98,11 @@ td .description {
 }
 
 footer .wrapper {
-    padding: 20px 32px;
+    padding: 26px 32px;
     background-color: dimgray;
-    height: 16px;
     font-size: 14px;
     color: whitesmoke;
-
+    height: 64px;
 }
 
 footer .left {
@@ -114,4 +117,29 @@ footer .right {
 footer a {
     text-decoration: underline;
     color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+
+    h1{
+        font-size: 26px;
+    }
+
+    header p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper{
+        padding: 16px;
+    }
+
+    footer .wrapper{
+        padding: 26px 16px;
+    }
+
+    footer .right{
+        display: none;
+    }
+
 }
