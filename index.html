@@ -1,8 +1,112 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html and CSS Cheatsheet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+
 <body>
-  <h1>Interface Jam</h1>
-  <p>Welcome to my website :)</p>
+    <header>
+        <div class="wrapper">
+            <h1>Attribute Selectors</h1>
+            <p>Attribute selectors allow you to create rules that apply to elements that have an
+                attribute with a specific value.</p>
+        </div>
+        <!-- end wrapper -->
+    </header>
+    <main>
+        <div class="wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Selector</th>
+                        <th scope="col">Meaning</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><b>Existence</b></th>
+                        <td><b>[]</b>
+                            <p>Matches a specific attribute (whatever its value</p>
+                        </td>
+                        <td><b>p[class]</b>
+                            <p>Targets any element with an attribute called class</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><b>Equality</b></th>
+                        <td><b>[=]</b>
+                            <p>Matches a specific attribute with a specific value</p>
+                        </td>
+                        <td><b>p[class="dog"]</b>
+                            <p>Targets any element with an attribute called class whose value is dog</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><b>Space</b></th>
+                        <td><b>[~=]</b>
+                            <p>Matches a specific attribute whose value appears in a space-separated list of words</p>
+                        </td>
+                        <td><b>p[class~="dog"]</b>
+                            <p>Targets any element with an attribute called class whose value is a list of
+                                space-separated words, one of which is dog</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><b>Prefix</b></th>
+                        <td><b>[^=]</b>
+                            <p>Matches a specific attribute whose value begins with a specific string</p>
+                        </td>
+                        <td><b>p[attr^"d"]</b>
+                            <p>Targets any element with an attribute whose value begins with the letter "d"</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><b>Substring</b></th>
+                        <td><b>[*=]</b>
+                            <p>Matches a specific attribute whose value contains a specific substring</p>
+                        </td>
+                        <td><b>p[attr*"do"]</b>
+                            <p>Targets any element with an attribute whose value contains the letters "do"</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><b>Suffix</b></th>
+                        <td><b>[$=]</b>
+                            <p>Matches a specific attribute whose value ends with a specific string</p>
+                        </td>
+                        <td><b>p[attr$"g"]</b>
+                            <p>Targets any element with an attribute whose value ends with the letter "g"</p>
+                        </td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+        <!-- end wrapper -->
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>Copyright © 2021 Interface Jam. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
- 
+
 </html>
