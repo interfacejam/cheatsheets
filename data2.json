@@ -149,6 +149,7 @@
 					"That's invalid syntax"
 				]
 			}
-		]
+		],
+            	"currentQuestionIndex" : 0
 	}
 }]
